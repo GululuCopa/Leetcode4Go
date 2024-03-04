@@ -2,6 +2,7 @@ package smallest_subarray
 
 // LongestOnes
 /**
+ * medium
  * 给定一个二进制数组 nums 和一个整数 k，如果可以翻转最多 k 个 0 ，则返回 数组中连续 1 的最大个数 。
  */
 func LongestOnes(nums []int, k int) int {

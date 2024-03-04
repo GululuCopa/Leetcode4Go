@@ -30,10 +30,10 @@ func LongestOnes(nums []int, k int) int {
 			left++
 		}
 
-		right++
 		if right-left+1 > maxLength {
 			maxLength = right - left + 1
 		}
+		right++
 
 	}
 	return maxLength
@@ -52,12 +52,12 @@ func LongestOnes2(nums []int, k int) (ans int) {
 			lsum += 1 - nums[left]
 			left++
 		}
-		ans = max(ans, right-left+1)
+		ans = maxInteger(ans, right-left+1)
 	}
 	return
 }
 
-func max(a, b int) int {
+func maxInteger(a, b int) int {
 	if a > b {
 		return a
 	}

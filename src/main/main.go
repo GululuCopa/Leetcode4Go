@@ -6,6 +6,6 @@ import (
 )
 
 func main() {
-	longest := smallest_subarray.FindSubstring("wordgoodgoodgoodbestword", []string{"word", "good", "best", "good"})
+	longest := smallest_subarray.CharacterReplacement("AABABBA", 1)
 	fmt.Println(longest)
 }

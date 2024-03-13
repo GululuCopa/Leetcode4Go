@@ -19,13 +19,18 @@ func CharacterReplacement(s string, k int) int {
 			if s[left] == s[right] {
 				count--
 			} else {
+				if right-left+1 > maxLength {
+					maxLength = right - left + 1
+				}
 				left++
+
 			}
 		}
-		if right-left+1 > maxLength {
-			maxLength = right - left + 1
-		}
 		right++
+	}
+
+	if maxLength+k > len(s) {
+		return len(s)
 	}
 	return maxLength
 }
